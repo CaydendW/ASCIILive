@@ -3,18 +3,17 @@ import cv2
 import sys
 from PIL import Image
 import os
-import time as time
 import functools
 
 print = functools.partial(print, flush=True)
 
 print("Welcome to ASCIILive.py")
-print("Made by: Cayden de Wit")
+print("Made by: CaydendW")
 print("Note: You may have to resize terminal window to get best effect.")
 print("Note: This does not work for Linux.")
 print("Note: Press control+c in the terminanl or q in the window to exit. (crtl+c) (q)")
 new_width = int(input("How big do you want the image?: "))
-theme = str(input("Press d for dark mode and leave blank for light.: "))
+theme = str(input("Press d for dark mode and leave blank for light: "))
 
 chars = []
 cap = cv2.VideoCapture(0)
@@ -75,5 +74,3 @@ while(True):
 os.system('cls')
 cap.release()
 cv2.destroyAllWindows()
-time.sleep(1)
-os.system('cls')
