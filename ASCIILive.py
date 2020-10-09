@@ -17,6 +17,7 @@ try:
     new_width = int(input("How big do you want the image?: "))
 except:
     print(new_width + " is not a valid int")
+    exit()
 
 theme = str(input("Press d for dark mode and l for light mode (This depends on your terminal background): "))
 pos = input("Please put w for windows or l for linux: ").lower()
