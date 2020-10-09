@@ -1,0 +1,6 @@
+# Any version works
+numpy
+opencv-python
+Pillow
+
+# Specific version
