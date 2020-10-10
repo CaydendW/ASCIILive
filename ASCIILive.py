@@ -58,15 +58,12 @@ try:
 
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
-            os.system('rm -rf Python.jpg')
             os.system(lspsa)
             cap.release()
             cv2.destroyAllWindows()
             exit()
 
-        cv2.imwrite(r"Python.jpg",gray)
-        image_path = r"Python.jpg"
-        img = Image.open(image_path)
+        img = Image.fromarray(gray)
 
         os.system(lspsa)
         
@@ -86,7 +83,6 @@ try:
         print(ascii_image)
 
 except KeyboardInterrupt:
-    os.system('rm -rf Python.jpg')
     cap.release()
     os.system(lspsa)
     cv2.destroyAllWindows()
