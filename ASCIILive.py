@@ -35,7 +35,7 @@ def disable_stdout_buffering():
 
 if theme=="d":
     chars = [" ",":","!","*","%","$","@","&","#","S","B"]
-elif theme=="d":
+elif theme=="l":
     chars = ["B","S","#","&","@","$","%","*","!",":"," "]
 else:
     print(theme + " is not a valid option")
